@@ -1,0 +1,37 @@
+{
+  "_comment": [
+    "The file every copy of Purrformance reads once at start-up. Edit it here,",
+    "commit, push -- that is the whole deployment. Raw GitHub serves it within a",
+    "minute or two, and the mod asks with Cache-Control: no-cache so it is not",
+    "served a stale one.",
+    "",
+    "Everything in it is optional. An empty {} means: current version, nobody",
+    "blocked, carry on. If the mod cannot reach this file it carries on too --",
+    "see the comment at the top of Gate.java for why that is on purpose.",
+    "",
+    "latest  the newest version there is. Anybody on an older one is shown the",
+    "        message below, once, shortly after they join a world. Compared",
+    "        number by number, so 1.0.0 < 1.0.1 < 1.1.0. It must match the",
+    "        mod_version in gradle.properties of the build you released.",
+    "message what those players are told. Keep it to a line -- it lands in chat.",
+    "url     tacked onto the end of the message, for where to get it.",
+    "blocked accounts the mod refuses to run for. uuid is the one that lasts;",
+    "        name also works and stops working the day they rename. reason is",
+    "        shown to them word for word, so write it as something a person",
+    "        reads. Removing an entry lets them back in the next time they",
+    "        start the game -- it is not one-way."
+  ],
+
+  "latest": "1.0.0",
+  "message": "A newer Purrformance is out. Grab it before the next session.",
+  "url": "https://github.com/Jacobalicious/purrformance/releases",
+
+  "blocked": [
+    {
+      "_example": "Delete this entry. It is here to show the shape.",
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "name": "",
+      "reason": "Switched off for misuse. Message Jellymeep if you think this is wrong."
+    }
+  ]
+}
